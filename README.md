@@ -1,3 +1,45 @@
+# Deployment
+
+If you want to deploy you webapp, head over to Heroku.com
+
+Log in or create a user.
+
+From the dashboard clikc 'New' and select 'New App'
+Enter you app name, and set location to Europe.
+Click 'Create app'
+
+From the terminal, inside of your app folder, run:
+`heroku git:remote -a your-heroku-app-name`
+
+Commit any changes you have:
+`git add .`
+`git commit -m'Your commit message here'`
+
+and push
+`git push heroku master`
+
+Note:
+create-react-app is initilized with `yarn`.
+If you use `npm` instead, you need to delete your `yarn.lock` file, commit the changes and push again
+
+Now you have deployd the development envionment of your app. To build and serve an optimalized version of you app do the following.
+
+From the terminal, in your app folder, run:
+`yarn add serve`
+
+In the file `package.json` of your app, change your scripts to the following:
+
+"scripts": {
+"start": "react-scripts build && serve -s build",
+"dev": "react-scripts start",
+"build": "react-scripts build",
+"test": "react-scripts test",
+"eject": "react-scripts eject"
+},
+
+1. We changed the "start" script to build your app and serve the build folder.
+2. We added a "dev" script to run your app in development mode. Next time you want to run your app locally run `yarn dev`
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
