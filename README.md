@@ -9,7 +9,9 @@ Enter you app name, and set location to Europe.
 Click 'Create app'
 
 From the terminal, inside of your app folder, run:
-`heroku git:remote -a your-heroku-app-name`
+```
+heroku git:remote -a your-heroku-app-name
+```
 
 Commit any changes you have:
 ```
