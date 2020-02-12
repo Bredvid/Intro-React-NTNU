@@ -18,7 +18,9 @@ git commit -m'Your commit message here'
 ```
 
 and push
-```git push heroku master```
+```
+git push heroku master
+```
 
 Note:
 create-react-app is initilized with `yarn`.
@@ -27,7 +29,9 @@ If you use `npm` instead, you need to delete your `yarn.lock` file, commit the c
 Now you have deployd the development envionment of your app. To build and serve an optimalized version of you app do the following.
 
 From the terminal, in your app folder, run:
-```yarn add serve`
+```
+yarn add serve
+```
 
 In the file `package.json` of your app, change your scripts to the following:
 
