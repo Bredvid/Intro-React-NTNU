@@ -34,13 +34,13 @@ yarn add serve
 ```
 
 In the file `package.json` of your app, change your scripts to the following:
-````
+```
 "scripts": {
-"start": "react-scripts build && serve -s build",
-"dev": "react-scripts start",
-"build": "react-scripts build",
-"test": "react-scripts test",
-"eject": "react-scripts eject"
+    "start": "react-scripts build && serve -s build",
+    "dev": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
 },
 ```
 
