@@ -1,6 +1,6 @@
 # Deployment
 
-If you want to deploy you webapp, head over to Heroku.com
+If you want to deploy you webapp, head over to [Heroku](https://heroku.com)
 
 Log in or create a user.
 
